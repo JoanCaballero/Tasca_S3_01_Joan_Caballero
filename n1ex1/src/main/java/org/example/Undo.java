@@ -7,10 +7,13 @@ import java.util.Scanner;
 public class Undo {
     public Scanner sc = new Scanner(System.in);
 
-    public ArrayList<String> comandes = new ArrayList<>();
-    public ArrayList<String> registre = new ArrayList<>();
-    private int index = 0;
-    private Undo(){}
+    public ArrayList<String> comandes;
+    public ArrayList<String> registre;
+    private int index;
+    private Undo(){
+        this.comandes = new ArrayList<>();
+        this.registre = new ArrayList<>();
+    }
     private static Undo undoInstance;
 
     public static Undo getInstance(){
